@@ -1,0 +1,28 @@
+{extends "base.html" %}
+{% block title %} 회원가입 페이지 {% endblock %}
+{% block content %}
+<form method="POST">
+    <h2 align="center">Sign Up</h2>
+    <div class="mb-3">
+      <label for="InputEmail1" class="form-label">가입 이메일</label>
+      <input name="email" type="email" class="form-control" id="userEmail1">
+    </div>
+
+    <div class="mb-3">
+        <label for="Nickname1" class="form-label">닉네임</label>
+        <input name="nickname" type="text" class="form-control" id="nickname">
+    </div>
+
+    <div class="mb-3">
+      <label for="InputPassword1" class="form-label">비밀번호</label>
+      <input name="password1" type="password" class="form-control" id="Password1">
+    </div>
+
+    <div class="mb-3">
+        <label for="InputPassword2" class="form-label">비밀번호 재입력</label>
+        <input name="password2" type="password" class="form-control" id="Password2">
+    </div>
+
+    <button type="submit" class="btn btn-primary">회원가입 신청</button>
+  </form>
+{% endblock %}
